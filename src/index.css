@@ -1,0 +1,130 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply font-outfit font-extrabold text-5xl text-center;
+  }
+  h2 {
+    @apply font-outfit font-bold text-4xl underline decoration-solid;
+  }
+  h3 {
+    @apply font-outfit font-semibold text-2xl tracking-wide text-inherit;
+  }
+  h4 {
+    @apply font-nunito font-semibold text-xl underline decoration-solid text-inherit;
+  }
+  h5 {
+    @apply font-nunito font-semibold text-lg tracking-wide;
+  }
+  p {
+    @apply font-nunito font-normal text-sm text-black;
+  }
+  p.p2 {
+    @apply font-nunito font-light text-xs text-black;
+  }
+  ul {
+    @apply list-outside ml-6 list-disc;
+  }
+  ol {
+    @apply list-outside ml-6 list-decimal;
+  }
+  li {
+    @apply text-sm text-black font-nunito;
+  }
+  button {
+    @apply p-1 px-2 border-2 rounded-full font-nunito font-medium text-xs hover:-translate-y-0.5 hover:-translate-x-0.5 hover:shadow-sm active:translate-y-0.5 active:translate-x-0.5 active:shadow-none transition duration-75 ring-0;
+  }
+  button.btn-blue {
+    @apply bg-lightBlue border-darkBlue text-darkBlue 
+      hover:shadow-darkBlue;
+  }
+  button.btn-green {
+    @apply bg-lightGreen border-darkGreen text-darkGreen hover:shadow-darkGreen;
+  }
+  button.btn-red {
+    @apply bg-lightRed border-darkRed text-darkRed hover:shadow-darkRed;
+  }
+  button.btn-orange {
+    @apply bg-lightOrange border-darkOrange text-darkOrange hover:shadow-darkOrange;
+  }
+  button.btn-purple {
+    @apply bg-lightPurple border-darkPurple text-darkPurple hover:shadow-darkPurple;
+  }
+  a {
+    @apply font-normal text-sm hover:font-semibold hover:underline hover:decoration-solid hover:cursor-pointer;
+  }
+  .menu-item {
+    @apply font-normal text-sm hover:font-semibold hover:underline hover:decoration-solid hover:cursor-pointer;
+  }
+  .menu-item-blue {
+    @apply text-darkBlue;
+  }
+  .menu-item-red {
+    @apply text-darkRed;
+  }
+  .menu-item-green {
+    @apply text-darkGreen;
+  }
+  .menu-item-orange {
+    @apply text-darkOrange;
+  }
+  .menu-item-purple {
+    @apply text-darkPurple;
+  }
+  .card {
+    @apply flex flex-col justify-center items-center rounded-xl border-2 shadow-md p-4 gap-4 hover:-translate-y-0.5 hover:-translate-x-0.5 hover:shadow-lg transition duration-100 hover:cursor-pointer active:translate-y-1 active:translate-x-1 active:shadow-none;
+  }
+  .text-input {
+    @apply w-full px-3 py-1 rounded-full border-2 shadow-md-inner focus:ring-4 outline-none;
+  }
+}
+
+@media screen(md) {
+  h1 {
+    @apply font-outfit font-extrabold text-8xl text-center;
+  }
+  h2 {
+    @apply font-outfit font-bold text-6xl underline decoration-solid;
+  }
+  h3 {
+    @apply font-outfit font-semibold text-4xl tracking-wide;
+  }
+  h4 {
+    @apply font-nunito font-semibold text-2xl underline decoration-solid;
+  }
+  h5 {
+    @apply font-nunito font-semibold text-xl tracking-wide;
+  }
+  a {
+    @apply text-base;
+  }
+  p {
+    @apply font-nunito font-normal text-base;
+  }
+  p.p2 {
+    @apply font-nunito font-light text-sm;
+  }
+  button {
+    @apply p-1 px-2 border-2 rounded-full font-nunito font-medium text-sm hover:-translate-y-0.5 hover:-translate-x-0.5 hover:shadow-md  active:translate-y-0.5 active:translate-x-0.5 active:shadow-none transition duration-75;
+  }
+  li {
+    @apply text-sm;
+  }
+}
+
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
