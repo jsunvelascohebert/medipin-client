@@ -1,4 +1,4 @@
-const URL = "http://localhost:8080/api/note";
+const URL = "https://medipin-e39746e8872b.herokuapp.com/api/note";
 
 /* ***** ***** get all notes ***** ***** */
 

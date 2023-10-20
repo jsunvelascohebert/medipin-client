@@ -1,4 +1,4 @@
-const URL = "http://localhost:8080/api/user/topic/article/note";
+const URL = "https://medipin-e39746e8872b.herokuapp.com/api/user/topic/article/note";
 
 /* ***** ***** get UTANS by key ***** ***** */
 

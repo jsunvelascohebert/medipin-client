@@ -1,4 +1,4 @@
-const URL = "http://localhost:8080/api/user/topic";
+const URL = "https://medipin-e39746e8872b.herokuapp.com/api/user/topic";
 
 /* ***** ***** get user topics ***** ***** */
 

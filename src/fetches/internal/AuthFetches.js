@@ -1,5 +1,4 @@
-
-const URL = 'http://localhost:8080/security';
+const URL = 'https://medipin-e39746e8872b.herokuapp.com/security';
 
 export async function authenticate(creds) {
     const init = {
