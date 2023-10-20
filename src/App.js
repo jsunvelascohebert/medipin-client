@@ -96,6 +96,7 @@ function App() {
                 ? <ArticleNotes />
                 : <Navigate to='/' />
               } />
+            <Route path="*" element={<Home />} />
           </Routes>
           <Footer />
           <Banner />
